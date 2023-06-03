@@ -1,0 +1,51 @@
+{
+  "name": "contributte/phpunit",
+  "description": "PHPUnit with extra horse power.",
+  "keywords": [
+    "tester",
+    "phpunit",
+    "php",
+    "nette"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/contributte/phpunit",
+  "authors": [
+    {
+      "name": "Milan Felix Šulc",
+      "homepage": "https://f3l1x.io"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "phpunit/phpunit": "^10.2.0",
+    "contributte/tester": "^0.3.0"
+  },
+  "require-dev": {
+    "contributte/qa": "^0.4.0",
+    "contributte/phpstan": "^0.1.0",
+    "mockery/mockery": "^1.5.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Contributte\\Phpunit\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.2.x-dev"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
