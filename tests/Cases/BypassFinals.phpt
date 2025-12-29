@@ -11,7 +11,7 @@ use Tests\Mocks\FinalService;
 
 require_once __DIR__ . '/../bootstrap.php';
 
-Toolkit::test(function () {
+Toolkit::test(function (): void {
 	Environment::bypassFinals();
 
 	$mock = Mockery::mock(FinalClass::class);
